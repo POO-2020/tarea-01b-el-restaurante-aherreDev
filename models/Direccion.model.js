@@ -15,7 +15,7 @@ class Direccion {
    * @param {string} ciudad
    * @param {string} municipio
    */
-  constructor(calle, numInt, numExt, col, cp, ciudad, municipio) {
+  constructor(calle, numInt = null, numExt, col, cp, ciudad, municipio) {
     this.calle = calle;
     this.numInt = numInt;
     this.numExt = numExt;
@@ -24,8 +24,9 @@ class Direccion {
     this.ciudad = ciudad;
     this.municipio = municipio;
   }
-  getFormatoCorto = () => null;
-  getFormatoLargo = () => null;
+  getFormatoCorto = () => `${this.calle} ${this.numExt}`;
+  getFormatoLargo = () =>
+    `${this.calle} ${this.numInt} ${this.numExt} ${this.col} ${this.cp} ${this.ciudad} ${this.municipio}`;
 }
 
 export default Direccion;
