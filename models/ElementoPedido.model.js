@@ -1,6 +1,9 @@
 import Producto from "./Producto.model";
-
 class ElementoPedido {
+  /**
+   * @property {Producto} producto
+   * @prop {number} cantidad
+   */
   producto;
   cantidad;
   /**
@@ -11,6 +14,9 @@ class ElementoPedido {
     this.producto = producto;
     this.cantidad = cantidad;
   }
-  getDescripcion = () => null;
+  getDescripcion = () => {
+    let { getDescription } = this.producto;
+    return `${this.cantidad} x ${getDescription()}`;
+  };
 }
 export default ElementoPedido;
