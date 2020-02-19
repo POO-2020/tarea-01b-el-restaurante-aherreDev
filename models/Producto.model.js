@@ -12,9 +12,8 @@ class Producto {
     this.nombre = nombre;
   }
   getDescription = () => {
-    {
-      this.nombre, this.precio;
-    }
+    let { getPrecio } = this.precio;
+    return `${this.nombre} ${getPrecio()}`;
   };
 }
 export default Producto;
