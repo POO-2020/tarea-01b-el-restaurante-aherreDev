@@ -52,7 +52,6 @@ class Fecha extends Date {
     `${this.getDate()}/${meses[this.getMonth()]}/${this.getFullYear()}`;
 
   getDiaFecha = () => `${dias[this.getDate()]}`;
-  getX = () => this - new Date();
 }
 
 export default Fecha;
