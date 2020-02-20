@@ -22,5 +22,21 @@ class Restaurante {
     this.productos = productos;
     this.pedidos = pedidos;
   }
+  registrarProducto = producto => {
+    this.productos.push(producto);
+  };
+  listarProductos = () => {
+    this.productos.forEach(producto => {
+      console.log(producto.getDescription());
+    });
+  };
+  registrarPedido = pedido => {
+    this.pedidos.push(pedido);
+  };
+  listarPedidos = () => {
+    this.pedidos.forEach(pedido => {
+      pedido.listarElemento();
+    });
+  };
 }
 export default Restaurante;
