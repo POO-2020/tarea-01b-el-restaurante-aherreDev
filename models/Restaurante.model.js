@@ -1,6 +1,6 @@
 // ? Models
-import Producto from "./Producto.model";
-import Direccion from "./Direccion.model";
+import Producto from "./Producto.model.js";
+import Direccion from "./Direccion.model.js";
 
 class Restaurante {
   nombre;

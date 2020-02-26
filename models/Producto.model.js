@@ -1,5 +1,5 @@
 // ? Models
-import Precio from "./Precio.model";
+import Precio from "./Precio.model.js";
 
 class Producto {
   precio;

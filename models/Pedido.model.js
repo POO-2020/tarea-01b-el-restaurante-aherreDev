@@ -1,9 +1,9 @@
 // ? Models
-import Fecha from "./Fecha.model";
-import Tiempo from "./Tiempo.model";
-import Cliente from "./Cliente.model";
-import ElementoPedido from "./ElementoPedido.model";
-import Precio from "./Precio.model";
+import Fecha from "./Fecha.model.js";
+import Tiempo from "./Tiempo.model.js";
+import Cliente from "./Cliente.model.js";
+import ElementoPedido from "./ElementoPedido.model.js";
+import Precio from "./Precio.model.js";
 
 class Pedido {
   fecha;

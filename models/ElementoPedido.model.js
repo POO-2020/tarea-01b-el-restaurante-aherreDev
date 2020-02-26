@@ -1,4 +1,4 @@
-import Producto from "./Producto.model";
+import Producto from "./Producto.model.js";
 class ElementoPedido {
   /**
    * @property {Producto} producto
