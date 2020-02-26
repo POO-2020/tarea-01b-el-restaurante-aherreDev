@@ -16,5 +16,6 @@ class Producto {
     return `${this.nombre} ${getPrecio()}`;
   };
   getPrecio = () => this.precio.getRealPrecio();
+  getNombre = () => this.nombre;
 }
 export default Producto;
