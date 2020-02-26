@@ -1,5 +1,5 @@
 // ? Models
-import Precio from "./Precio.model";
+import Precio from "./Precio.model.js";
 
 class Producto {
   precio;
@@ -16,5 +16,6 @@ class Producto {
     return `${this.nombre} ${getPrecio()}`;
   };
   getPrecio = () => this.precio.getRealPrecio();
+  getNombre = () => this.nombre;
 }
 export default Producto;

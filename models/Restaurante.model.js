@@ -1,6 +1,7 @@
 // ? Models
-import Producto from "./Producto.model";
-import Direccion from "./Direccion.model";
+import Producto from "./Producto.model.js";
+import Direccion from "./Direccion.model.js";
+import Pedido from "./Pedido.model.js";
 
 class Restaurante {
   nombre;
@@ -13,7 +14,7 @@ class Restaurante {
    * @param {string} telefono
    * @param {Direccion} direccion
    * @param {Array.<Producto>} productos
-   * @param {string} pedidos
+   * @param {Array.<Pedido>} pedidos
    */
   constructor(nombre, telefono, direccion, productos, pedidos) {
     this.nombre = nombre;

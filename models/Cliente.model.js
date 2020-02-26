@@ -1,5 +1,5 @@
 // ? Models
-import Direccion from "./Direccion.model";
+import Direccion from "./Direccion.model.js";
 
 class Cliente {
   nombre;
@@ -15,7 +15,10 @@ class Cliente {
     this.direccion = direccion;
     this.telefono = telefono;
   }
-  getPerfil = () => {};
+  getPerfil = () => {
+    let { getFormatoLargo } = this.direccion;
+    return `${this.nombre}, ${getFormatoLargo()}, ${this.telefono}`;
+  };
 }
 
 export default Cliente;
