@@ -10,7 +10,7 @@ class Precio {
   constructor(precio) {
     if (precio !== null || precio !== undefined) this.precio = precio;
   }
-  getPrecio = () => numbersWithCommas(this.precio);
+  getPrecio = () => "$" + numbersWithCommas(this.precio);
   getRealPrecio = () => this.precio;
 }
 
